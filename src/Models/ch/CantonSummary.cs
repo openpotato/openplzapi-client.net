@@ -16,12 +16,7 @@ namespace OpenPlzApi.Client.CH
     public class CantonSummary
     {
         /// <summary>
-        /// Code (Kantonskürzel)
-        /// </summary>
-        public string Code { get; set; }
-
-        /// <summary>
-        /// Key (Kantonsnummer)
+        /// Key (Bfs-Nummer des Kantons)
         /// </summary>
         public string Key { get; set; }
 
@@ -29,5 +24,10 @@ namespace OpenPlzApi.Client.CH
         /// Name (Kantonsname)
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Short name (Kantonskürzel)
+        /// </summary>
+        public string ShortName { get; set;  }
     }
 }

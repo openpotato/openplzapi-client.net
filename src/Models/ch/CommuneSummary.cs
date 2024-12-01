@@ -16,7 +16,7 @@ namespace OpenPlzApi.Client.CH
     public class CommuneSummary
     {
         /// <summary>
-        /// Key (Gemeindenummer)
+        /// Key (Bfs-Nummer der Gemeinde)
         /// </summary>
         public string Key { get; set; }
 
