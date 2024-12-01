@@ -16,7 +16,7 @@ namespace OpenPlzApi.Client.CH
     public class DistrictSummary
     {
         /// <summary>
-        /// Key (Bezirksnummer)
+        /// Key (Bfs-Nummer des Bezirks)
         /// </summary>
         public string Key { get; set; }
 
@@ -24,5 +24,10 @@ namespace OpenPlzApi.Client.CH
         /// Name (Bezirksname)
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Short name (Bezirksname, kurz)
+        /// </summary>
+        public string ShortName { get; set; }
     }
 }

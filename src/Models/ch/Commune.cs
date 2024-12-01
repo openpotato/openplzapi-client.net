@@ -26,7 +26,12 @@ namespace OpenPlzApi.Client.CH
         public DistrictSummary District { get; set; }
 
         /// <summary>
-        /// Key (Gemeindenummer)
+        /// Historical code (Historisierte Nummer der Gemeinde)
+        /// </summary>
+        public string HistoricalCode { get; set; }
+
+        /// <summary>
+        /// Key (Bfs-Nummer der Gemeinde)
         /// </summary>
         public string Key { get; set; }
 

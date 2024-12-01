@@ -21,7 +21,12 @@ namespace OpenPlzApi.Client.CH
         public CantonSummary Canton { get; set; }
 
         /// <summary>
-        /// Key (Bezirksnummer)
+        /// Historical code (Historisierte Nummer des Bezirks)
+        /// </summary>
+        public string HistoricalCode { get; set; }
+
+        /// <summary>
+        /// Key (Bfs-Nummer des Bezirks)
         /// </summary>
         public string Key { get; set; }
 
@@ -29,5 +34,10 @@ namespace OpenPlzApi.Client.CH
         /// Name (Bezirksname)
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Short name (Bezirksname, kurz)
+        /// </summary>
+        public string ShortName { get; set; }
     }
 }
