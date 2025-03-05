@@ -96,13 +96,13 @@ namespace OpenPlzApi.Client.CH.Tests
 
             foreach (var commune in communes)
             {
-                if (commune.Key == "2061")
+                if (commune.Key == "2063")
                 {
                     existsKey = true;
 
-                    Assert.Equal("Auboranges", commune.Name);
-                    Assert.Equal("11680", commune.HistoricalCode);
-                    Assert.Equal("Auboranges", commune.ShortName);
+                    Assert.Equal("Billens-Hennens", commune.Name);
+                    Assert.Equal("14103", commune.HistoricalCode);
+                    Assert.Equal("Billens-Hennens", commune.ShortName);
                     Assert.Equal("1002", commune.District.Key);
                     Assert.Equal("District de la Glâne", commune.District.Name);
                     Assert.Equal("10", commune.Canton.Key);
