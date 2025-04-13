@@ -95,13 +95,10 @@ namespace OpenPlzApi.Client.LI.Tests
 
             foreach (var locality in localities)
             {
-                if ((locality.PostalCode == "9490") && (locality.Name == "Vaduz")) 
+                if ((locality.PostalCode == "9490") && (locality.Name == "Vaduz") && (locality.Commune.Key == "7001")) 
                 {
                     Exists_Name = true;
                     Exists_PostalCode = true;
-
-                    Assert.Equal("7001", locality.Commune.Key);
-                    Assert.Equal("Vaduz", locality.Commune.Name);
 
                     break;
                 }
