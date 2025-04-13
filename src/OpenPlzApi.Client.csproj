@@ -8,7 +8,7 @@
     <Copyright>© 2025 STÜBER SYSTEMS GmbH</Copyright>
     <Product>OpenPLZ API .NET Client</Product>
     <Description>.NET Client for the OpenPLZ API project</Description>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <LangVersion>latest</LangVersion>
     <RootNamespace>OpenPlzApi.Client</RootNamespace>
     <NeutralLanguage></NeutralLanguage>
