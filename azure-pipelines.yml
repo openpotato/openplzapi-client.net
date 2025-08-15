@@ -129,7 +129,8 @@ stages:
 
 - stage: GitHub
   jobs:
-  - job: 
+  - job:
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))  
     steps:
     - checkout: self
       fetchDepth: 0
