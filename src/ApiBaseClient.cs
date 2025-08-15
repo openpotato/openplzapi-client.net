@@ -34,9 +34,9 @@ namespace OpenPlzApi.Client
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="IRestClient"/> class.
+        /// Initializes a new instance of the <see cref="ApiBaseClient"/> class.
         /// </summary>
-        /// <param name="apiHttpClient">An implementation of <see cref="HttpClient"/></param>
+        /// <param name="restClient">An implementation of <see cref="IRestClient"/></param>
         /// <param name="baseUrl">The base url of the OpenPLZ API</param>
         public ApiBaseClient(IRestClient restClient, string baseUrl)
         {
@@ -45,7 +45,7 @@ namespace OpenPlzApi.Client
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ApiClient"/> class.
+        /// Initializes a new instance of the <see cref="ApiBaseClient"/> class.
         /// </summary>
         /// <param name="baseUrl">The base url of the OpenPLZ API</param>
         public ApiBaseClient(string baseUrl)
@@ -63,9 +63,9 @@ namespace OpenPlzApi.Client
         }
 
         /// <summary>
-        /// Gives back the interanal instance of the rest client
+        /// Gives back the interanal instance of the <see cref="IRestClient"/> implmentation
         /// </summary>
-        /// <returns>A new <see cref="IRestClient"/> implmentation</returns>
+        /// <returns>A new <see cref="IRestClient"/> implementation</returns>
         protected IRestClient GetRestClient()
         {
             return _restClient;

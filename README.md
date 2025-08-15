@@ -11,7 +11,7 @@ The official [.NET](https://dotnet.microsoft.com/) client library for direct acc
  
 ## Installation
 
-The **OpenPLZ PHP .NET Client** is available on [NuGet](https://www.nuget.org/packages/OpenPlzApi.Client) and can be installed via .NET CLI:
+The **OpenPLZ API .NET Client** is available on [NuGet](https://www.nuget.org/packages/OpenPlzApi.Client) and can be installed via .NET CLI:
 
 ```
 dotnet add package OpenPlzApi.Client
