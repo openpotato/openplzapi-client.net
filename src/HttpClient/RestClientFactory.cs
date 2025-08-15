@@ -46,10 +46,10 @@ namespace OpenPlzApi.Client
                     .OrResult(msg => msg.StatusCode == HttpStatusCode.ServiceUnavailable)
                     .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
 
-            // Create IRestHttpClient implementation
+            // Create IRestClient implementation
             var services = serviceCollection.BuildServiceProvider();
 
-            // Return back IRestHttpClient implementation
+            // Return back IRestClient implementation
             return services.GetRequiredService<IRestClient>();
         }
     }
