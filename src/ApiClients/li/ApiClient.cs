@@ -81,7 +81,7 @@ namespace OpenPlzApi.Client.LI
         public async Task<IReadOnlyPagedCollection<Locality>> GetLocalitiesAsync(string postalCode, string name, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Locality>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"li/Localities")
                     .WithParameter("postalCode", postalCode)
@@ -106,7 +106,7 @@ namespace OpenPlzApi.Client.LI
         public async Task<IReadOnlyPagedCollection<Street>> GetStreetsAsync(string name, string postalCode, string locality, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Street>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"li/Streets")
                     .WithParameter("name", name)
@@ -130,7 +130,7 @@ namespace OpenPlzApi.Client.LI
         public async Task<IReadOnlyPagedCollection<Street>> PerformFullTextSearchAsync(string searchTerm, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Street>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath("li/FullTextSearch")
                     .WithParameter("searchTerm", searchTerm)

@@ -5,7 +5,7 @@
 
 The official [.NET](https://dotnet.microsoft.com/) client library for direct access to the [OpenPLZ API](https://www.openplzapi.org/en).
 
-+ Supports .NET 8 and .NET 9
++ Supports .NET 10, .NET 9 and .NET 8
 + Supports all available [API endpoints](https://openplzapi.org/swagger/index.html)
 + Supports paged responses and [RFC 9457](https://datatracker.ietf.org/doc/html/rfc9457) error responses
  

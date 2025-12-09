@@ -141,7 +141,7 @@ namespace OpenPlzApi.Client.DE
         public async Task<IReadOnlyPagedCollection<Locality>> GetLocalitiesAsync(string postalCode, string name, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Locality>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"de/Localities")
                     .WithParameter("postalCode", postalCode)
@@ -206,7 +206,7 @@ namespace OpenPlzApi.Client.DE
         public async Task<IReadOnlyPagedCollection<MunicipalAssociation>> GetMunicipalAssociationsByGovernmentRegionAsync(string key, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<MunicipalAssociation>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"de/GovernmentRegions/{key}/MunicipalAssociations")
                     .WithParameter("page", pageIndex)
@@ -227,7 +227,7 @@ namespace OpenPlzApi.Client.DE
         public async Task<IReadOnlyPagedCollection<Municipality>> GetMunicipalitiesByDistrictAsync(string key, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Municipality>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"de/Districts/{key}/Municipalities")
                     .WithParameter("page", pageIndex)
@@ -247,7 +247,7 @@ namespace OpenPlzApi.Client.DE
         public async Task<IReadOnlyPagedCollection<Municipality>> GetMunicipalitiesByFederalStateAsync(string key, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Municipality>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"de/FederalStates/{key}/Municipalities")
                     .WithParameter("page", pageIndex)
@@ -268,7 +268,7 @@ namespace OpenPlzApi.Client.DE
         public async Task<IReadOnlyPagedCollection<Municipality>> GetMunicipalitiesByGovernmentRegionAsync(string key, int pageIndex = 1, int pageSize = 50, 
             CancellationToken cancellationToken = default)
         {
-            return await GetRestClient().GetPageAsync<Municipality>(
+            return await GetRestClient().GetPageAsync(
                 CreateUriBuilder()
                     .WithRelativePath($"de/GovernmentRegions/{key}/Municipalities")
                     .WithParameter("page", pageIndex)
